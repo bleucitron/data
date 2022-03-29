@@ -11,7 +11,13 @@ var T = new Twit({
   app_only_auth: true,
 });
 
-const users = ['r_ourson', 'jub0bs', 'TB_Choi12', 'reactjs', 'fipradio'];
+const users = [
+  'r_ourson',
+  'jub0bs',
+  'Mappletons',
+  'Rich_Harris',
+  'dan_abramov',
+];
 
 const tweetsPs = users.map(user => {
   return T.get('statuses/user_timeline', {
